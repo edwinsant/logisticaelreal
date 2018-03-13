@@ -37,6 +37,9 @@
         <activity android:name=".UI.Activities.ConfirmationActivity" />
         <activity android:name=".UI.Activities.testingAct" />
         <activity android:name=".UI.Activities.InventoryActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d52367165d044105a54bed0300a9d01ec0ce5b7f" />
     </application>
 
 </manifest>

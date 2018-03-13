@@ -10,11 +10,13 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
 import com.inventario.acreal.floatbutton.Models.User;
 import com.inventario.acreal.floatbutton.R;
 import com.inventario.acreal.floatbutton.Utils.BaseAdapter;
 import com.inventario.acreal.floatbutton.Utils.SQLiteHelper;
 
+import io.fabric.sdk.android.Fabric;
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapPrimitive;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.act_login);
         btacceder = (Button)findViewById(R.id.bt_buscarDa);
         usuario = (EditText) findViewById(R.id.edt_user);
