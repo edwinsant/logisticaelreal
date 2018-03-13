@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/inbox"
+            android:checked="false"
+            android:icon="@drawable/ic_inbox_black"
+            android:title="Reubicacion Piso" />
+
+        <item
+            android:id="@+id/starred"
+            android:checked="false"
+            android:icon="@drawable/ic_star_black"
+            android:title="Tarea de Move" />
+
+        <item
+            android:id="@+id/sent_mail"
+            android:checked="false"
+            android:icon="@drawable/ic_send_black"
+            android:title="Move Ubicacion" />
+
+        <item
+            android:id="@+id/drafts"
+            android:checked="false"
+            android:icon="@drawable/ic_drafts_black"
+            android:title="@string/draft_string" />
+
+        <item
+            android:id="@+id/version"
+            android:checked="false"
+            android:icon="@drawable/ic_done"
+            android:title="Version: 2.05 - 22/11/2017" />
+        <item
+            android:id="@+id/trash"
+            android:checked="false"
+            android:icon="@drawable/r"
+            android:title="Salir" />
+
+    </group>
+</menu>

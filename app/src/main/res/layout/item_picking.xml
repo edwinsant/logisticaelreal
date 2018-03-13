@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_carry"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/carry"
+                android:id="@+id/iv_task"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_carry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_task"
+                android:layout_centerHorizontal="true"
+                android:text="20351"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/AccentColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/layout_carry"
+            android:layout_toRightOf="@+id/layout_carry"
+            android:id="@+id/tv_name"
+            android:text="444 - JAIME RAFAEL GUIDO BORGUE"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/BlackLowOpacity"/>
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_warehouse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_toEndOf="@+id/layout_carry"
+            android:layout_toRightOf="@+id/layout_carry"
+            android:src="@drawable/lote"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_warehouse"
+            android:layout_toEndOf="@+id/iv_warehouse"
+            android:text="CEDI2"
+            android:textSize="14sp"
+            android:id="@+id/tv_warehouse"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_calendar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_warehouse"
+            android:layout_toEndOf="@+id/layout_carry"
+            android:layout_toRightOf="@+id/layout_carry"
+            android:src="@drawable/expiration"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_warehouse"
+            android:layout_toRightOf="@+id/iv_calendar"
+            android:layout_toEndOf="@+id/iv_calendar"
+            android:text="04/09/2015"
+            android:textSize="14sp"
+            android:id="@+id/tv_date"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

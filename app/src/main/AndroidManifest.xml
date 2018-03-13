@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventario.acreal.floatbutton">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UI.Activities.MainActivity"
+            android:configChanges="screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Activities.MoveActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name=".UI.Activities.DetailProductActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name=".UI.Activities.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UI.Activities.PickingActivity" />
+        <activity android:name=".UI.Activities.LineActivity" />
+        <activity android:name=".UI.Activities.ProductActivity" />
+        <activity android:name=".UI.Activities.ConfirmationActivity" />
+        <activity android:name=".UI.Activities.testingAct" />
+        <activity android:name=".UI.Activities.InventoryActivity"></activity>
+    </application>
+
+</manifest>

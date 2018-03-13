@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_task_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarea # 101"
+                android:textColor="@color/AccentColor"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_id_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_name_product"
+                android:layout_alignBottom="@+id/tv_name_product"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="PM00229 - "
+                android:textColor="@color/BlackLowOpacity"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACEITE 1/2 GALON DON JUAN"
+                android:layout_toEndOf="@+id/tv_id_product"
+                android:layout_toRightOf="@+id/tv_id_product"
+                android:id="@+id/tv_name_product"
+                android:textColor="@color/BlackLowOpacity"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/tv_task_number"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_opacity"
+                android:id="@+id/vw_hr"
+                android:layout_below="@+id/tv_name_product"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/origin3"
+                android:id="@+id/iv_origin"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/vw_hr"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Origen"
+                android:layout_toEndOf="@+id/iv_origin"
+                android:layout_toRightOf="@+id/iv_origin"
+                android:id="@+id/tv_origin"
+                android:layout_below="@+id/vw_hr"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT"
+                android:id="@+id/tv_origin_name"
+                android:layout_toEndOf="@+id/tv_origin"
+                android:layout_toRightOf="@+id/tv_origin"
+                android:layout_below="@+id/vw_hr"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <View android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/line_dotted"
+                android:background="@drawable/dotted_line"
+                android:layout_below="@+id/iv_origin"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/destiny"
+                android:id="@+id/iv_destiny"
+                android:layout_below="@+id/line_dotted"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destino"
+                android:layout_below="@+id/line_dotted"
+                android:id="@+id/tv_destiny"
+                android:layout_toEndOf="@+id/iv_destiny"
+                android:layout_toRightOf="@+id/iv_destiny"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_destiny"
+                android:layout_toRightOf="@+id/tv_destiny"
+                android:layout_below="@+id/line_dotted"
+                android:text="02-100-A-1"
+                android:textColor="@color/BlackOpacity"
+                android:id="@+id/tv_destiny_name"
+                android:textSize="14sp"/>
+
+            <View android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/line_dotted5"
+                android:background="@drawable/dotted_line"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_destiny"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/lote2"
+                android:id="@+id/iv_lote"
+                android:layout_below="@+id/line_dotted5"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lote"
+                android:id="@+id/tv_lote"
+                android:layout_below="@+id/line_dotted5"
+                android:layout_toEndOf="@+id/iv_lote"
+                android:layout_toRightOf="@+id/iv_lote"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lote1"
+                android:layout_below="@+id/line_dotted5"
+                android:id="@+id/tv_lote_name"
+                android:layout_toEndOf="@+id/tv_lote"
+                android:layout_toRightOf="@+id/tv_lote"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <View android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/line_dotted2"
+                android:background="@drawable/dotted_line"
+                android:layout_below="@+id/iv_lote"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/calendar2"
+                android:id="@+id/iv_calendar"
+                android:layout_below="@+id/line_dotted2"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha vencimiento"
+                android:id="@+id/tv_expiration"
+                android:layout_below="@+id/line_dotted2"
+                android:layout_toEndOf="@+id/iv_calendar"
+                android:layout_toRightOf="@+id/iv_calendar"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04/12/2040"
+                android:id="@+id/tv_expiration_date"
+                android:layout_toEndOf="@+id/tv_expiration"
+                android:layout_toRightOf="@+id/tv_expiration"
+                android:layout_below="@+id/line_dotted2"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <View android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/line_dotted4"
+                android:background="@drawable/dotted_line"
+                android:layout_below="@+id/tv_expiration_date"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/trolley"
+                android:id="@+id/iv_count"
+                android:layout_below="@id/line_dotted4"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad a ubicar"
+                android:id="@+id/tv_count"
+                android:layout_below="@+id/line_dotted4"
+                android:layout_toEndOf="@+id/iv_count"
+                android:layout_toRightOf="@+id/iv_count"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/tv_count_number"
+                android:layout_toEndOf="@+id/tv_count"
+                android:layout_toRightOf="@+id/tv_count"
+                android:layout_below="@+id/line_dotted4"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cj"
+                android:id="@+id/tv_umt"
+                android:layout_toEndOf="@+id/tv_count_number"
+                android:layout_toRightOf="@+id/tv_count_number"
+                android:layout_below="@+id/line_dotted4"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/line_dotted3"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_alignEnd="@+id/iv_units"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/iv_units"
+                android:layout_below="@+id/tv_count"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/dotted_line" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/unit2"
+                android:id="@+id/iv_units"
+                android:layout_below="@+id/line_dotted3"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equivalente a "
+                android:id="@+id/tv_units"
+                android:layout_below="@+id/line_dotted3"
+                android:layout_toEndOf="@+id/iv_units"
+                android:layout_toRightOf="@+id/iv_units"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_units_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_units"
+                android:layout_toRightOf="@+id/tv_units"
+                android:text="1000"
+                android:layout_below="@+id/line_dotted3"
+                android:textColor="@color/BlackOpacity"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_units_number"
+                android:layout_toRightOf="@+id/tv_units_number"
+                android:text="unidades"
+                android:layout_below="@+id/line_dotted3"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/line_dotted6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignEnd="@+id/iv_units"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/iv_units"
+                android:layout_below="@+id/iv_units"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dotted_line" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/security"
+                android:id="@+id/iv_security"
+                android:layout_below="@+id/line_dotted6"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_security"
+                android:layout_toRightOf="@+id/iv_security"
+                android:text="Seguridad"
+                android:layout_below="@+id/line_dotted6"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="security key"
+                android:id="@+id/et_security_key"
+                android:layout_below="@+id/line_dotted6"
+                android:layout_toEndOf="@+id/tv_security"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@+id/tv_security"
+                android:backgroundTint="@color/AccentColor"/>
+
+            <Button
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar código"
+                android:layout_below="@+id/et_security_key"
+                android:background="@color/AccentColor"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/btn_send_confirmation_key"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

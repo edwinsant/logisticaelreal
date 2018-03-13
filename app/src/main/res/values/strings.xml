@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Logistica</string>
+    <string name="drawer_header_text">Drawer Header</string>
+    <string name="nav_item_attachment">Attachment</string>
+    <string name="nav_item_images">Images</string>
+    <string name="nav_item_location">My Location</string>
+    <string name="nav_sub_menu">Sub Menu</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_sub_menu_item01">Sub Menu Item 1</string>
+    <string name="nav_sub_menu_item02">Sub Menu Item 2</string>
+    <string name="olinguito">Olinguito</string>
+    <string name="action_search">Search…</string>
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">Events</string>
+    <string name="starred_string">Starred</string>
+    <string name="inbox_string">Inbox</string>
+    <string name="sent_mail_string">Sent mail</string>
+    <string name="draft_string">Confirmación en Picking</string>
+    <string name="subheader">Subheader</string>
+    <string name="trash_string">Trash</string>
+    <string name="all_mail_string">All mails</string>
+    <string name="spam_string">Spams</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="option3">Option 3</string>
+    <string name="details">Details</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="user_password_incorrect">Usuario o contraseña incorrecta</string>
+    <string name="login">Entrar</string>
+    <string name="pre_dispatch">Cuadros de pre despacho</string>
+    <string name="pallet">Pallet</string>
+    <string name="location">Ubicación origen</string>
+    <string name="change_count_unit">Cambio en unidades</string>
+    <string name="change_count_boxes">Cambio en cajas</string>
+
+    <string-array name="cabecera_tabla">
+        <item>Opciones</item>
+        <item>Ubicacion</item>
+        <item>Lote</item>
+        <item>Existencia</item>
+        <item>Disponibilidad</item>
+
+        <item>Estado</item>
+        <item>Fecha</item>
+        <item>Secuencia</item>
+        <item>CFOV</item>
+        <item>CFOT</item>
+        <item>CFOT</item>
+    </string-array>
+</resources>

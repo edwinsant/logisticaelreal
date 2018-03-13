@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding"
+
+    android:paddingLeft="@dimen/general_padding"
+    android:paddingRight="@dimen/general_padding"
+    android:paddingTop="@dimen/row_padding">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="5sp"
+            android:paddingTop="5sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtcarga"
+                        style="@style/RowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/row_padding"
+                        android:text="Carga"
+                        android:textColor="#2195f2"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:paddingLeft="12sp">
+                    <TextView
+                        android:id="@+id/txtNombreCho"
+                        style="@style/RowTitle"
+                        android:textColor="#FF4500"
+                        android:text="NombreCho"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="5sp"
+            android:paddingTop="5sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal">
+                <TextView
+                    android:id="@+id/txtBodega"
+                    style="@style/RowTitle"
+                    android:text="Bodega"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/row_padding" />
+                <TextView
+                    android:id="@+id/txtFecha"
+                    style="@style/RowTitle"
+                    android:text="Fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

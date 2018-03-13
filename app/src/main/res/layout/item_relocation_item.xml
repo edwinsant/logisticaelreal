@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="6dp"
+android:layout_margin="6dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_task"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/list"
+            android:id="@+id/iv_task"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_task_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_task"
+            android:layout_centerHorizontal="true"
+            android:text="#101"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/AccentColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/layout_task"
+        android:layout_toRightOf="@+id/layout_task"
+        android:id="@+id/tv_id_product"
+        android:text="PMOO229 -"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginRight="6dp"
+        android:textColor="@color/BlackLowOpacity"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_id_product"
+        android:layout_toRightOf="@+id/tv_id_product"
+        android:text="Aceite 1/2 galón don Juan"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_name_product"
+        android:textSize="14sp"
+        android:textColor="@color/BlackLowOpacity"/>
+
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:id="@+id/tv_pallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name_product"
+        android:layout_toEndOf="@+id/layout_task"
+        android:layout_toRightOf="@+id/layout_task"
+        android:text="@string/pallet"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name_product"
+        android:layout_toRightOf="@+id/tv_pallet"
+        android:layout_toEndOf="@+id/tv_pallet"
+        android:text="001010101"
+        android:textSize="14sp"
+        android:id="@+id/pallet_id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pallet"
+        android:layout_toEndOf="@+id/layout_task"
+        android:layout_toRightOf="@+id/layout_task"
+        android:text="@string/location"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pallet_id"
+        android:layout_toRightOf="@+id/tv_location"
+        android:layout_toEndOf="@+id/tv_location"
+        android:text="PT"
+        android:textSize="14sp"
+        android:id="@+id/tv_name_location"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

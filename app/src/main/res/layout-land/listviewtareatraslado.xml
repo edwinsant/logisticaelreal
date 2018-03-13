@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/general_padding"
+    android:paddingRight="@dimen/general_padding"
+    android:paddingTop="@dimen/row_padding">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="5sp"
+            android:paddingTop="5sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="130sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_weight="0.12">
+                    <TextView
+                        android:id="@+id/txttarea"
+                        style="@style/RowTitle"
+                        android:text="Tarea #: 77"
+                        android:textSize="24sp"
+                        android:textColor="#2195f2"
+                        android:layout_width="176dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/row_padding" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:paddingLeft="12sp">
+                <TextView
+                    android:id="@+id/txtUbicacion"
+                    style="@style/RowTitle"
+                    android:textColor="#FF4500"
+                    android:text="Posicion"
+                    android:textSize="24sp"
+                    android:layout_width="207sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10sp" />
+                    </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="5sp"
+            android:paddingTop="5sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal">
+                <TextView
+                    android:id="@+id/txtArticulo"
+                    style="@style/RowTitle"
+                    android:text="Articulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/row_padding" />
+                <TextView
+                    android:id="@+id/txtdescripcion"
+                    style="@style/RowTitle"
+                    android:text="Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+ </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

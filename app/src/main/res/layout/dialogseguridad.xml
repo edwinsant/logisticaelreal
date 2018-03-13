@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_container"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:id="@+id/txtseguridad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Codigo Seguridad"
+        android:inputType="textPassword" />
+
+    <ScrollView
+        android:id="@+id/cuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/botonera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/verdeacreal"
+            android:text="Aceptar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/verdeacreal"
+            android:text="Cancelar"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

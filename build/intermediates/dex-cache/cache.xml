@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\dsiezar\Documents\Aceitera\TI\00 PROYECTOS 2017\LOTES\APP ANIELKA LOTES\Projects\Logistica\logisticaelreal\app\libs\ksoap2-android-assembly-3.4.0-jar.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45fbaab416fb5cff992e662d1f7a83786f084fc3">
+        <dex dex="C:\Users\dsiezar\Documents\Aceitera\TI\00 PROYECTOS 2017\LOTES\APP ANIELKA LOTES\Projects\Logistica\logisticaelreal\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.4.0-jar_4b091a24f1277f15e87846d6931ac8d6ce1de942.jar" />
+    </item>
+
+</items>

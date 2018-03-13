@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_id_product"
+            android:text="PM00029 - "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/BlackLowOpacity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="ACEITE REF SOJA GALON"
+            android:layout_toEndOf="@+id/tv_id_product"
+            android:layout_toRightOf="@+id/tv_id_product"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/BlackLowOpacity"/>
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_warehouse1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_name"
+            android:src="@drawable/dispatch2"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_warehouse"
+            android:layout_toEndOf="@+id/iv_warehouse"
+            android:text="Cuadro"
+            android:textSize="14sp"
+            android:id="@+id/tv_dispatch"
+            android:textStyle="bold"
+            android:textColor="@color/BlackLowOpacity"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_dispatch"
+            android:layout_toEndOf="@+id/tv_dispatch"
+            android:text="20351"
+            android:textSize="14sp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/tv_dispatch_name"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_warehouse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_dispatch_name"
+            android:src="@drawable/lote2"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dispatch_name"
+            android:layout_toRightOf="@+id/iv_warehouse"
+            android:layout_toEndOf="@+id/iv_warehouse"
+            android:text="Lote"
+            android:textSize="14sp"
+            android:id="@+id/tv_lote"
+            android:textStyle="bold"
+            android:textColor="@color/BlackLowOpacity"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dispatch_name"
+            android:layout_toRightOf="@+id/tv_lote"
+            android:layout_toEndOf="@+id/tv_lote"
+            android:text="Lote1"
+            android:textSize="14sp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/tv_lote_name"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_calendar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_lote_name"
+            android:src="@drawable/calendar2"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lote_name"
+            android:layout_toRightOf="@+id/iv_calendar"
+            android:layout_toEndOf="@+id/iv_calendar"
+            android:text="Ubicación"
+            android:textSize="14sp"
+            android:id="@+id/tv_location"
+            android:textStyle="bold"
+            android:textColor="@color/BlackLowOpacity"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lote_name"
+            android:layout_toRightOf="@+id/tv_location"
+            android:layout_toEndOf="@+id/tv_location"
+            android:text="PT"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:id="@+id/tv_name_location"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

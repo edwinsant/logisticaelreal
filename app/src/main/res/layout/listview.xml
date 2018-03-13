@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/general_padding"
+    android:paddingRight="@dimen/general_padding"
+    android:paddingTop="@dimen/row_padding">
+    <TextView
+        android:id="@+id/txtposicion"
+        style="@style/RowTitle"
+        android:text="Posicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/circleView"
+        android:layout_toRightOf="@+id/circleView"
+        android:paddingLeft="@dimen/row_padding" />
+    <TextView
+        android:id="@+id/txt_posicion"
+        style="@style/RowSubtitle"
+        android:text="Posicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtposicion"
+        android:layout_alignStart="@+id/txtposicion"
+        android:layout_below="@+id/txtposicion"
+        android:paddingLeft="@dimen/row_padding" />
+    <TextView
+        android:id="@+id/Txtcodigo"
+        style="@style/RowTitle"
+        android:text="Codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtposicion"
+        android:layout_toEndOf="@+id/txtposicion" />
+    <TextView
+        android:id="@+id/txt_codigo"
+        style="@style/RowSubtitle"
+        android:text="Codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/row_padding"
+        android:layout_below="@+id/Txtcodigo"
+        android:layout_alignRight="@+id/Txtcodigo"
+        android:layout_alignEnd="@+id/Txtcodigo" />
+    <TextView
+        android:id="@+id/stxtcajas"
+        style="@style/RowSubtitle"
+        android:text="Cajas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/row_padding"
+        android:layout_below="@+id/Txtcantidad"
+        android:layout_toRightOf="@+id/Txtcodigo"
+        android:layout_toEndOf="@+id/Txtcodigo"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+    <TextView
+        android:id="@+id/stxtunidades"
+        style="@style/RowSubtitle"
+        android:text="Unidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/row_padding"
+        android:layout_below="@+id/Txtcantidad"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/Txtcantidad"
+        style="@style/RowTitle"
+        android:text="Cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/stxtcajas"
+        android:layout_alignStart="@+id/stxtcajas" />
+    <View
+        android:id="@+id/circleView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/circle"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

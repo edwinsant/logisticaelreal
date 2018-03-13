@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_unidades"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidades existentes"
+                android:id="@+id/tv_existence"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,400"
+                android:id="@+id/tv_existence_count"
+                android:layout_toEndOf="@+id/tv_existence"
+                android:layout_toRightOf="@+id/tv_existence"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_opacity"
+                android:id="@+id/view_hr_line"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_below="@+id/tv_existence_count"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidades solicitadas"
+                android:id="@+id/tv_required"
+                android:layout_below="@+id/view_hr_line"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,233"
+                android:id="@+id/tv_required_count"
+                android:layout_toEndOf="@+id/tv_required"
+                android:layout_toRightOf="@+id/tv_required"
+                android:layout_below="@+id/view_hr_line"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_umt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:text="Cant"
+                android:layout_toEndOf="@+id/tv_required_count"
+                android:layout_toRightOf="@+id/tv_required_count"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"
+                android:layout_below="@+id/view_hr_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bulto/Cajas"
+                android:id="@+id/tv_boxs_required"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/tv_required_count"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="102"
+                android:id="@+id/tv_boxs_required_count"
+                android:layout_toEndOf="@+id/tv_boxs_required"
+                android:layout_toRightOf="@+id/tv_boxs_required"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/tv_required_count"/>
+
+            <TextView
+                android:id="@+id/tv_ump_required"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="UMP"
+                android:layout_toEndOf="@+id/tv_boxs_required_count"
+                android:layout_toRightOf="@+id/tv_boxs_required_count"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/tv_required_count"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidades sueltas"
+                android:id="@+id/tv_units_required"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/tv_boxs_required_count"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:id="@+id/tv_units_required_count"
+                android:layout_toEndOf="@+id/tv_units_required"
+                android:layout_toRightOf="@+id/tv_units_required"
+                android:textColor="@color/BlackOpacity"
+                android:layout_below="@+id/tv_boxs_required_count"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_unidades"
+        android:id="@+id/cv_info"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/origin3"
+                android:id="@+id/iv_origin"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/vw_hr"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Origen"
+                android:layout_toEndOf="@+id/iv_origin"
+                android:layout_toRightOf="@+id/iv_origin"
+                android:id="@+id/tv_origin"
+                android:layout_below="@+id/vw_hr"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT"
+                android:id="@+id/tv_origin_name"
+                android:layout_toEndOf="@+id/tv_origin"
+                android:layout_toRightOf="@+id/tv_origin"
+                android:layout_below="@+id/vw_hr"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/destiny"
+                android:id="@+id/iv_secuency"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_origin_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secuencia"
+                android:id="@+id/tv_secuency"
+                android:layout_toEndOf="@+id/iv_secuency"
+                android:layout_toRightOf="@+id/iv_secuency"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_origin_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_secuency"
+                android:layout_toRightOf="@+id/tv_secuency"
+                android:text="1001"
+                android:textColor="@color/BlackOpacity"
+                android:id="@+id/tv_secuency_name"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_origin_name"/>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/lote2"
+                android:id="@+id/iv_lote"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_secuency_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lote"
+                android:id="@+id/tv_lote"
+                android:layout_toEndOf="@+id/iv_lote"
+                android:layout_toRightOf="@+id/iv_lote"
+                android:textColor="@color/BlackLowOpacity"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_secuency_name"/>
+
+            <TextView
+                android:id="@+id/tv_lote_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_lote"
+                android:layout_toRightOf="@+id/tv_lote"
+                android:text="Lote1"
+                android:textColor="@color/BlackOpacity"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_secuency_name"/>
+
+            <ImageView
+                android:id="@+id/imglote"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/buscar"
+                android:layout_toEndOf="@+id/tv_lote_name"
+                android:layout_toRightOf="@+id/tv_lote_name"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv_secuency_name"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cv_info"
+    android:id="@+id/cv_details"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmación de despacho"
+            android:id="@+id/tv_dispatch"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/BlackLowOpacity"/>
+
+        <View
+            android:id="@+id/view_hr"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_dispatch"
+            android:layout_marginTop="6dp"
+            android:background="@color/gray_opacity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Factor"
+            android:layout_toLeftOf="@+id/tv_factor_count"
+            android:layout_toStartOf="@+id/tv_factor_count"
+            android:textColor="@color/BlackLowOpacity"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_below="@+id/view_hr"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/BlackOpacity"
+            android:textSize="14sp"
+            android:id="@+id/tv_factor_count"
+            android:layout_below="@+id/view_hr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulto/Cajas"
+            android:id="@+id/tv_boxs"
+            android:textColor="@color/BlackLowOpacity"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_factor_count"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102"
+            android:id="@+id/tv_boxs_count"
+            android:layout_toEndOf="@+id/tv_boxs"
+            android:layout_toRightOf="@+id/tv_boxs"
+            android:textColor="@color/BlackOpacity"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/tv_factor_count"/>
+
+        <TextView
+            android:id="@+id/tv_ump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:text="UMP"
+            android:layout_toEndOf="@+id/tv_boxs_count"
+            android:layout_toRightOf="@+id/tv_boxs_count"
+            android:textColor="@color/BlackOpacity"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_factor_count"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/edit"
+            android:layout_toEndOf="@+id/tv_ump"
+            android:layout_toRightOf="@+id/tv_ump"
+            android:id="@+id/iv_edit_boxs"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/tv_factor_count"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidades sueltas"
+            android:id="@+id/tv_units"
+            android:textColor="@color/BlackLowOpacity"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_boxs_count"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/tv_units_count"
+            android:layout_toEndOf="@+id/tv_units"
+            android:layout_toRightOf="@+id/tv_units"
+            android:textColor="@color/BlackOpacity"
+            android:layout_below="@+id/tv_boxs_count"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/edit"
+            android:layout_toEndOf="@+id/tv_units_count"
+            android:layout_toRightOf="@+id/tv_units_count"
+            android:id="@+id/iv_edit_units"
+            android:layout_below="@+id/tv_boxs_count"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total en unidades"
+            android:id="@+id/tv_total_dispatch"
+            android:textColor="@color/BlackLowOpacity"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/iv_edit_units"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="416"
+            android:id="@+id/tv_count_units_dispatch"
+            android:layout_toEndOf="@+id/tv_total_dispatch"
+            android:layout_toRightOf="@+id/tv_total_dispatch"
+            android:textColor="@color/BlackOpacity"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/iv_edit_units"/>
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguridad"
+            android:layout_below="@+id/tv_count_units_dispatch"
+            android:textColor="@color/BlackLowOpacity"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/et_security_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_count_units_dispatch"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/tv_security"
+            android:layout_toRightOf="@+id/tv_security"
+            android:backgroundTint="@color/AccentColor"
+            android:hint="Codigo Seguridad"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar código"
+        android:layout_below="@+id/cv_details"
+        android:background="@color/AccentColor"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/btn_confirmation_data"/>
+
+
+</RelativeLayout>
