@@ -37,7 +37,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
+        //integración Fabric
+        final Fabric fabric = new Fabric.Builder(this)
+                .kits(new Crashlytics())
+                .debuggable(true)
+                .build();
+        Fabric.with(fabric);
+        //-------
         setContentView(R.layout.act_login);
         btacceder = (Button)findViewById(R.id.bt_buscarDa);
         usuario = (EditText) findViewById(R.id.edt_user);
